@@ -1,12 +1,12 @@
 // Sirf config export hota hai. Firebase SDK pages (index.html / admin.html) khud load karte hain,
 // taake do alag SDK versions load na hon.
 const firebaseConfig = {
-  apiKey: "AIzaSyA895Uxj9i-8eS-3jv_5zHuuPXoQIGRWt0",
-  authDomain: "hn-scents-1ed84.firebaseapp.com",
-  projectId: "hn-scents-1ed84",
-  storageBucket: "hn-scents-1ed84.firebasestorage.app",
-  messagingSenderId: "1089448946221",
-  appId: "1:1089448946221:web:fadb55a4dc95bc5bb1a6a4"
+  apiKey: "AIzaSyDABxuXfKZrdQtiz5IQ7Do_OrFruawQllI",
+  authDomain: "hnscents-de3dc.firebaseapp.com",
+  projectId: "hnscents-de3dc",
+  storageBucket: "hnscents-de3dc.firebasestorage.app",
+  messagingSenderId: "678019268660",
+  appId: "1:678019268660:web:fcde52f64231df3b184a61"
 };
 
 export { firebaseConfig };
