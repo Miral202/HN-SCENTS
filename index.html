@@ -589,6 +589,18 @@ function openPolicy(k){document.getElementById('policyTitle').textContent=k==='p
 addEventListener('scroll',()=>document.querySelector('header').classList.toggle('scrolled',scrollY>20),{passive:true});
 Object.assign(window,{toast,toggleMenu,goTo,closeModal,openModal,filterCat,addToCart,openCart,openCheckout,togglePM,placeOrder,trackOrder,cancelOrder,requestChange,submitReview,openPolicy,sendViaWhatsApp,sendViaEmail});
 renderProducts();renderReviews();updateCartCount();renderContactInfo();
+  function sendViaEmail() {
+    const name = document.getElementById('cName').value;
+    const phone = document.getElementById('cPhone').value;
+    const topic = document.getElementById('cTopic').value;
+    const msg = document.getElementById('cMsg').value;
+    
+    const adminEmail = 'miralnaz672@gmail.com'; 
+    const subject = encodeURIComponent('Website Message: ' + topic);
+    const body = encodeURIComponent('Name: ' + name + '\nPhone: ' + phone + '\n\nMessage:\n' + msg);
+    
+    window.location.href = `mailto:${adminEmail}?subject=${subject}&body=${body}`;
+}
 </script>
 </body>
 </html>
